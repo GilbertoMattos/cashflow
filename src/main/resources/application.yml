@@ -1,0 +1,26 @@
+server:
+  port: 8083  
+spring:
+  application:
+    name: CashFlow
+  datasource:
+    url: jdbc:postgresql://db-postgres.caprover.tecnosys.dev/cashflow
+    username: postgres
+    password: 8016a9306022ec3a
+    driver-class-name: org.postgresql.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      maximum-pool-size: 100
+      pool-name: "pg-pool-convenio-manager"
+      minimum-idle: 5
+
+  jpa:
+    show-sql: true
+    generate-ddl: false
+    database: postgresql
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
+    baseline-on-migrate: true 
