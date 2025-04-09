@@ -36,16 +36,3 @@ public class TipoMov extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private OperacaoMovimentacaoEnum operacao;
 }
-
-@Getter
-enum OperacaoMovimentacaoEnum {
-
-    E("Entrada"),
-    S("Saida");
-
-    private String descricao;
-
-    OperacaoMovimentacaoEnum(String descricao) {
-        this.descricao = descricao;
-    }
-}
