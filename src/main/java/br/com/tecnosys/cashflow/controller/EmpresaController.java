@@ -65,7 +65,7 @@ public class EmpresaController {
     @DeleteMapping("/{id}")
     public ResponseEntity<ApiResponse<Void>> deleteEmpresa(@PathVariable Long id) {
         empresaService.deleteById(id);
-        ApiResponse<Void> response = new ApiResponse<>(null);
+        ApiResponse<Void> response = new ApiResponse<>();
         return ResponseEntity.ok(response);
     }
 }
