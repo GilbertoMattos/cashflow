@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Optional;
 
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -21,7 +20,6 @@ public class EmpresaServiceImpl implements EmpresaService {
     private final EmpresaRepository empresaRepository;
     private final ModelMapper modelMapper;
 
-    @Autowired
     public EmpresaServiceImpl(EmpresaRepository empresaRepository, ModelMapper modelMapper) {
         this.empresaRepository = empresaRepository;
         this.modelMapper = modelMapper;
@@ -47,7 +45,7 @@ public class EmpresaServiceImpl implements EmpresaService {
                 empresaPage.getSize(),
                 empresaPage.getTotalElements(),
                 empresaPage.getTotalPages());
-        return new ApiResponse<>("success", "Dados recuperados com sucesso", empresas, pagination);
+        return new ApiResponse<>(empresas, pagination);
     }
 
     @Override

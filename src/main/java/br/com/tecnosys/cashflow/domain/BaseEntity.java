@@ -12,10 +12,10 @@ import java.time.LocalDateTime;
 public abstract class BaseEntity {
 
     @Column(name = "create_at")
-    private LocalDateTime createAt;
+    private LocalDateTime createAt = LocalDateTime.now();
 
     @Column(name = "create_by")
-    private String createBy;
+    private String createBy = "dado fixo";
 
     @Column(name = "alter_at")
     private LocalDateTime alterAt;

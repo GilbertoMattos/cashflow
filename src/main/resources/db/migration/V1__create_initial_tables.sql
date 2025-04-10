@@ -1,6 +1,7 @@
 CREATE TABLE empresa (
     id BIGSERIAL PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
+    cnpj VARCHAR(20) NOT NULL,
     create_at TIMESTAMP NOT NULL,
     create_by VARCHAR(255) NOT NULL,
     alter_at TIMESTAMP,

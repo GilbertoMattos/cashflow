@@ -25,4 +25,7 @@ public class Empresa extends BaseEntity {
 
     @Column(name = "nome")
     private String nome;
+
+    @Column(name = "cnpj")
+    private String cnpj;
 }
