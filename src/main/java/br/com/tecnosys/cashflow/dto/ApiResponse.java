@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ApiResponse<T> {
- 
-    @JsonInclude(JsonInclude.Include.NON_NULL)
+
     private String message = "Operação realizada com sucesso";
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private T data;
@@ -33,6 +33,7 @@ public class ApiResponse<T> {
     }
 
     public ApiResponse(T data, Pagination pagination) {
+        this.message = "Operação realizada com sucesso";
         this.data = data;
         this.pagination = pagination;
     }
@@ -40,6 +41,7 @@ public class ApiResponse<T> {
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     public static class Pagination {
         private int page; // Número da página atual
         private int size; // Tamanho da página (itens por página)
