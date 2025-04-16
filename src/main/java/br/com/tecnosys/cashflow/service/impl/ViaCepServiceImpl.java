@@ -1,6 +1,7 @@
 package br.com.tecnosys.cashflow.service.impl;
 
 import br.com.tecnosys.cashflow.dto.ViaCepDTO;
+import br.com.tecnosys.cashflow.exception.BusinessException;
 import br.com.tecnosys.cashflow.http.ViaCepFeign;
 import br.com.tecnosys.cashflow.service.ViaCepService;
 import lombok.extern.log4j.Log4j2;
@@ -21,6 +22,9 @@ public class ViaCepServiceImpl implements ViaCepService {
     public ViaCepDTO getEndereco(String cep) {
         log.info("Consultando endereco pelo cep {}", cep);
         ResponseEntity<ViaCepDTO> viaCep = viaCepFeign.getViaCep(cep);
+        if (viaCep.getBody() == null) {
+            throw new BusinessException("Endereco nao encontrado");
+        }
         log.debug("Retorno do servico viacep foi {}", viaCep.getBody());
         return viaCep.getBody();
     }

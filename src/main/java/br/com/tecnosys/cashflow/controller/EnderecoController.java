@@ -4,6 +4,7 @@ import br.com.tecnosys.cashflow.dto.ApiResponse;
 import br.com.tecnosys.cashflow.dto.ViaCepDTO;
 import br.com.tecnosys.cashflow.service.ViaCepService;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -18,7 +19,7 @@ public class EnderecoController {
 
     @GetMapping("{cep}")
     @ResponseStatus(HttpStatus.OK)
-    public ApiResponse<ViaCepDTO> getEndereco(@PathVariable String cep) {
-        return new ApiResponse<>(viaCepService.getEndereco(cep));
+    public ResponseEntity<ApiResponse<ViaCepDTO>> getEndereco(@PathVariable String cep) {
+        return ResponseEntity.ok(new ApiResponse<>(viaCepService.getEndereco(cep)));
     }
 }

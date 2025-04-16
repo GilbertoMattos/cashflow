@@ -1,10 +1,12 @@
 package br.com.tecnosys.cashflow.dto;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class ViaCepDTO {
@@ -17,7 +19,7 @@ public class ViaCepDTO {
     private String uf;
     private String estado;
     private String regiao;
-    private String igbe;
+    private String ibge;
     private String gia;
     private String ddd;
     private String siafi;

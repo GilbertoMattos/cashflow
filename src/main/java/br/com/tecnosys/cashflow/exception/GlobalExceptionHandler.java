@@ -1,13 +1,13 @@
 package br.com.tecnosys.cashflow.exception;
 
+import br.com.tecnosys.cashflow.dto.ApiResponse;
+import feign.FeignException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
-
-import br.com.tecnosys.cashflow.dto.ApiResponse;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
@@ -25,10 +25,10 @@ public class GlobalExceptionHandler {
         return new ApiResponse<>(ex.getMessage());
     }
 
-    @ExceptionHandler(ValidationException.class)
-    @ResponseStatus(HttpStatus.PRECONDITION_FAILED)
-    public ApiResponse<Void> validationException(ValidationException ex) {
-        return new ApiResponse<>(ex.getMessage());
+    @ExceptionHandler(FeignException.ServiceUnavailable.class)
+    @ResponseStatus(HttpStatus.SERVICE_UNAVAILABLE)
+    public ApiResponse<Void> handleServiceUnavailable(FeignException.ServiceUnavailable ex) {
+        return new ApiResponse<>("Serviço indisponível");
     }
 
     @ExceptionHandler(Exception.class)
