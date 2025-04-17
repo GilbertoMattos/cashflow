@@ -2,7 +2,7 @@ package br.com.tecnosys.cashflow.controller;
 
 import br.com.tecnosys.cashflow.dto.ApiResponse;
 import br.com.tecnosys.cashflow.dto.ViaCepDTO;
-import br.com.tecnosys.cashflow.service.ViaCepService;
+import br.com.tecnosys.cashflow.service.EnderecoService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("api/endereco")
 public class EnderecoController {
 
-    private final ViaCepService viaCepService;
+    private final EnderecoService viaCepService;
 
-    public EnderecoController(ViaCepService viaCepService) {
+    public EnderecoController(EnderecoService viaCepService) {
         this.viaCepService = viaCepService;
     }
 
