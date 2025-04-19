@@ -4,36 +4,46 @@ spring:
   application:
     name: CashFlow
   datasource:
-    url: jdbc:postgresql://db-postgres.caprover.tecnosys.dev/cashflow
+    url: jdbc:postgresql://localhost:5432/cashflow
     username: postgres
-    password: 8016a9306022ec3a
+    password: postgres
     driver-class-name: org.postgresql.Driver
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
       maximum-pool-size: 100
-      pool-name: "pg-pool-convenio-manager"
+      pool-name: "pg-pool-cashflow"
       minimum-idle: 5
-
   jpa:
     show-sql: false
-    generate-ddl: false
     database: postgresql
     properties:
       hibernate:
         format_sql: false
+    open-in-view: false
   flyway:
     enabled: true
     baseline-on-migrate: true
+logging:
+  level:
+    root: info
+  file:
+    path: logs
 management:
   endpoints:
     web:
       exposure:
-        include: "health,info,loggers,metrics"
+        include: "health,info,loggers,metrics,env,prometheus"
     access:
       default: unrestricted
   endpoint:
     health:
       show-details: always
+    env:
+      show-values: always
+  prometheus:
+    metrics:
+      export:
+        enabled: true
   info:
     env:
       enabled: true
