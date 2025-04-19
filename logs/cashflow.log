@@ -1,0 +1,857 @@
+{
+  "@timestamp" : "2025-04-19T18:57:32.931527472-03:00",
+  "message" : "HV000001: Hibernate Validator 8.0.2.Final",
+  "logger_name" : "org.hibernate.validator.internal.util.Version",
+  "thread_name" : "background-preinit",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.hibernate.validator.internal.util.Version",
+  "caller_method_name" : "<clinit>",
+  "caller_file_name" : "Version.java",
+  "caller_line_number" : 21
+}
+{
+  "@timestamp" : "2025-04-19T18:57:32.960433-03:00",
+  "message" : "Starting CashflowApplication using Java 21.0.6 with PID 176999 (/home/gilberto/projetos/cashflow/target/classes started by gilberto in /home/gilberto/projetos/cashflow)",
+  "logger_name" : "br.com.tecnosys.cashflow.CashflowApplication",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.boot.StartupInfoLogger",
+  "caller_method_name" : "logStarting",
+  "caller_file_name" : "StartupInfoLogger.java",
+  "caller_line_number" : 53
+}
+{
+  "@timestamp" : "2025-04-19T18:57:32.961677429-03:00",
+  "message" : "No active profile set, falling back to 1 default profile: \"default\"",
+  "logger_name" : "br.com.tecnosys.cashflow.CashflowApplication",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.boot.SpringApplication",
+  "caller_method_name" : "logStartupProfileInfo",
+  "caller_file_name" : "SpringApplication.java",
+  "caller_line_number" : 652
+}
+{
+  "@timestamp" : "2025-04-19T18:57:32.996253929-03:00",
+  "message" : "Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable",
+  "logger_name" : "org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.boot.logging.DeferredLog",
+  "caller_method_name" : "logTo",
+  "caller_file_name" : "DeferredLog.java",
+  "caller_line_number" : 252
+}
+{
+  "@timestamp" : "2025-04-19T18:57:32.996680496-03:00",
+  "message" : "For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'",
+  "logger_name" : "org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.boot.logging.DeferredLog",
+  "caller_method_name" : "logTo",
+  "caller_file_name" : "DeferredLog.java",
+  "caller_line_number" : 252
+}
+{
+  "@timestamp" : "2025-04-19T18:57:33.67242746-03:00",
+  "message" : "Bootstrapping Spring Data JPA repositories in DEFAULT mode.",
+  "logger_name" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "caller_method_name" : "registerRepositoriesIn",
+  "caller_file_name" : "RepositoryConfigurationDelegate.java",
+  "caller_line_number" : 143
+}
+{
+  "@timestamp" : "2025-04-19T18:57:33.723153839-03:00",
+  "message" : "Finished Spring Data repository scanning in 38 ms. Found 5 JPA repository interfaces.",
+  "logger_name" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.data.repository.config.RepositoryConfigurationDelegate",
+  "caller_method_name" : "registerRepositoriesIn",
+  "caller_file_name" : "RepositoryConfigurationDelegate.java",
+  "caller_line_number" : 211
+}
+{
+  "@timestamp" : "2025-04-19T18:57:33.840139498-03:00",
+  "message" : "BeanFactory id=17f6c07a-44de-3c4a-8dc9-3284b39b429f",
+  "logger_name" : "org.springframework.cloud.context.scope.GenericScope",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.cloud.context.scope.GenericScope",
+  "caller_method_name" : "setSerializationId",
+  "caller_file_name" : "GenericScope.java",
+  "caller_line_number" : 282
+}
+{
+  "@timestamp" : "2025-04-19T18:57:34.287763369-03:00",
+  "message" : "Tomcat initialized with port 8083 (http)",
+  "logger_name" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "caller_method_name" : "initialize",
+  "caller_file_name" : "TomcatWebServer.java",
+  "caller_line_number" : 111
+}
+{
+  "@timestamp" : "2025-04-19T18:57:34.296325571-03:00",
+  "message" : "Initializing ProtocolHandler [\"http-nio-8083\"]",
+  "logger_name" : "org.apache.coyote.http11.Http11NioProtocol",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.apache.juli.logging.DirectJDKLog",
+  "caller_method_name" : "log",
+  "caller_file_name" : "DirectJDKLog.java",
+  "caller_line_number" : 173
+}
+{
+  "@timestamp" : "2025-04-19T18:57:34.297976025-03:00",
+  "message" : "Starting service [Tomcat]",
+  "logger_name" : "org.apache.catalina.core.StandardService",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.apache.juli.logging.DirectJDKLog",
+  "caller_method_name" : "log",
+  "caller_file_name" : "DirectJDKLog.java",
+  "caller_line_number" : 173
+}
+{
+  "@timestamp" : "2025-04-19T18:57:34.298357184-03:00",
+  "message" : "Starting Servlet engine: [Apache Tomcat/10.1.39]",
+  "logger_name" : "org.apache.catalina.core.StandardEngine",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.apache.juli.logging.DirectJDKLog",
+  "caller_method_name" : "log",
+  "caller_file_name" : "DirectJDKLog.java",
+  "caller_line_number" : 173
+}
+{
+  "@timestamp" : "2025-04-19T18:57:34.320915928-03:00",
+  "message" : "Initializing Spring embedded WebApplicationContext",
+  "logger_name" : "org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.apache.juli.logging.DirectJDKLog",
+  "caller_method_name" : "log",
+  "caller_file_name" : "DirectJDKLog.java",
+  "caller_line_number" : 173
+}
+{
+  "@timestamp" : "2025-04-19T18:57:34.32134947-03:00",
+  "message" : "Root WebApplicationContext: initialization completed in 1324 ms",
+  "logger_name" : "org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext",
+  "caller_method_name" : "prepareWebApplicationContext",
+  "caller_file_name" : "ServletWebServerApplicationContext.java",
+  "caller_line_number" : 301
+}
+{
+  "@timestamp" : "2025-04-19T18:57:34.597776801-03:00",
+  "message" : "pg-pool-cashflow - Starting...",
+  "logger_name" : "com.zaxxer.hikari.HikariDataSource",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "com.zaxxer.hikari.HikariDataSource",
+  "caller_method_name" : "getConnection",
+  "caller_file_name" : "HikariDataSource.java",
+  "caller_line_number" : 109
+}
+{
+  "@timestamp" : "2025-04-19T18:57:34.695540206-03:00",
+  "message" : "pg-pool-cashflow - Added connection org.postgresql.jdbc.PgConnection@27792473",
+  "logger_name" : "com.zaxxer.hikari.pool.HikariPool",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "com.zaxxer.hikari.pool.HikariPool",
+  "caller_method_name" : "checkFailFast",
+  "caller_file_name" : "HikariPool.java",
+  "caller_line_number" : 554
+}
+{
+  "@timestamp" : "2025-04-19T18:57:34.697017172-03:00",
+  "message" : "pg-pool-cashflow - Start completed.",
+  "logger_name" : "com.zaxxer.hikari.HikariDataSource",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "com.zaxxer.hikari.HikariDataSource",
+  "caller_method_name" : "getConnection",
+  "caller_file_name" : "HikariDataSource.java",
+  "caller_line_number" : 122
+}
+{
+  "@timestamp" : "2025-04-19T18:57:34.718450429-03:00",
+  "message" : "Database: jdbc:postgresql://localhost:5432/cashflow (PostgreSQL 17.4)",
+  "logger_name" : "org.flywaydb.core.FlywayExecutor",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.flywaydb.core.internal.logging.slf4j.Slf4jLog",
+  "caller_method_name" : "info",
+  "caller_file_name" : "Slf4jLog.java",
+  "caller_line_number" : 41
+}
+{
+  "@timestamp" : "2025-04-19T18:57:34.75632016-03:00",
+  "message" : "Successfully validated 2 migrations (execution time 00:00.020s)",
+  "logger_name" : "org.flywaydb.core.internal.command.DbValidate",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.flywaydb.core.internal.logging.slf4j.Slf4jLog",
+  "caller_method_name" : "info",
+  "caller_file_name" : "Slf4jLog.java",
+  "caller_line_number" : 41
+}
+{
+  "@timestamp" : "2025-04-19T18:57:34.786774461-03:00",
+  "message" : "Current version of schema \"public\": 2",
+  "logger_name" : "org.flywaydb.core.internal.command.DbMigrate",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.flywaydb.core.internal.logging.slf4j.Slf4jLog",
+  "caller_method_name" : "info",
+  "caller_file_name" : "Slf4jLog.java",
+  "caller_line_number" : 41
+}
+{
+  "@timestamp" : "2025-04-19T18:57:34.789282841-03:00",
+  "message" : "Schema \"public\" is up to date. No migration necessary.",
+  "logger_name" : "org.flywaydb.core.internal.command.DbMigrate",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.flywaydb.core.internal.logging.slf4j.Slf4jLog",
+  "caller_method_name" : "info",
+  "caller_file_name" : "Slf4jLog.java",
+  "caller_line_number" : 41
+}
+{
+  "@timestamp" : "2025-04-19T18:57:34.874172156-03:00",
+  "message" : "HHH000204: Processing PersistenceUnitInfo [name: default]",
+  "logger_name" : "org.hibernate.jpa.internal.util.LogHelper",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.hibernate.jpa.internal.util.LogHelper",
+  "caller_method_name" : "logPersistenceUnitInformation",
+  "caller_file_name" : "LogHelper.java",
+  "caller_line_number" : 31
+}
+{
+  "@timestamp" : "2025-04-19T18:57:34.901540149-03:00",
+  "message" : "HHH000412: Hibernate ORM core version 6.6.11.Final",
+  "logger_name" : "org.hibernate.Version",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.hibernate.Version",
+  "caller_method_name" : "logVersion",
+  "caller_file_name" : "Version.java",
+  "caller_line_number" : 44
+}
+{
+  "@timestamp" : "2025-04-19T18:57:34.922763146-03:00",
+  "message" : "HHH000026: Second-level cache disabled",
+  "logger_name" : "org.hibernate.cache.internal.RegionFactoryInitiator",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.hibernate.cache.internal.RegionFactoryInitiator",
+  "caller_method_name" : "initiateService",
+  "caller_file_name" : "RegionFactoryInitiator.java",
+  "caller_line_number" : 50
+}
+{
+  "@timestamp" : "2025-04-19T18:57:35.070600459-03:00",
+  "message" : "No LoadTimeWeaver setup: ignoring JPA class transformer",
+  "logger_name" : "org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo",
+  "caller_method_name" : "addTransformer",
+  "caller_file_name" : "SpringPersistenceUnitInfo.java",
+  "caller_line_number" : 87
+}
+{
+  "@timestamp" : "2025-04-19T18:57:35.108027057-03:00",
+  "message" : "HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)",
+  "logger_name" : "org.hibernate.orm.deprecation",
+  "thread_name" : "restartedMain",
+  "level" : "WARN",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl",
+  "caller_method_name" : "constructDialect",
+  "caller_file_name" : "DialectFactoryImpl.java",
+  "caller_line_number" : 153
+}
+{
+  "@timestamp" : "2025-04-19T18:57:35.118159638-03:00",
+  "message" : "HHH10001005: Database info:\n\tDatabase JDBC URL [Connecting through datasource 'HikariDataSource (pg-pool-cashflow)']\n\tDatabase driver: undefined/unknown\n\tDatabase version: 17.4\n\tAutocommit mode: undefined/unknown\n\tIsolation level: undefined/unknown\n\tMinimum pool size: undefined/unknown\n\tMaximum pool size: undefined/unknown",
+  "logger_name" : "org.hibernate.orm.connections.pooling",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator",
+  "caller_method_name" : "initiateService",
+  "caller_file_name" : "JdbcEnvironmentInitiator.java",
+  "caller_line_number" : 157
+}
+{
+  "@timestamp" : "2025-04-19T18:57:35.755137562-03:00",
+  "message" : "HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)",
+  "logger_name" : "org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator",
+  "caller_method_name" : "initiateService",
+  "caller_file_name" : "JtaPlatformInitiator.java",
+  "caller_line_number" : 59
+}
+{
+  "@timestamp" : "2025-04-19T18:57:35.757578265-03:00",
+  "message" : "Initialized JPA EntityManagerFactory for persistence unit 'default'",
+  "logger_name" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.orm.jpa.AbstractEntityManagerFactoryBean",
+  "caller_method_name" : "buildNativeEntityManagerFactory",
+  "caller_file_name" : "AbstractEntityManagerFactoryBean.java",
+  "caller_line_number" : 447
+}
+{
+  "@timestamp" : "2025-04-19T18:57:36.075956635-03:00",
+  "message" : "LiveReload server is running on port 35729",
+  "logger_name" : "org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer",
+  "caller_method_name" : "startServer",
+  "caller_file_name" : "OptionalLiveReloadServer.java",
+  "caller_line_number" : 59
+}
+{
+  "@timestamp" : "2025-04-19T18:57:36.786413572-03:00",
+  "message" : "Exposing 6 endpoints beneath base path '/actuator'",
+  "logger_name" : "org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver",
+  "caller_method_name" : "<init>",
+  "caller_file_name" : "EndpointLinksResolver.java",
+  "caller_line_number" : 60
+}
+{
+  "@timestamp" : "2025-04-19T18:57:36.846663213-03:00",
+  "message" : "Starting ProtocolHandler [\"http-nio-8083\"]",
+  "logger_name" : "org.apache.coyote.http11.Http11NioProtocol",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.apache.juli.logging.DirectJDKLog",
+  "caller_method_name" : "log",
+  "caller_file_name" : "DirectJDKLog.java",
+  "caller_line_number" : 173
+}
+{
+  "@timestamp" : "2025-04-19T18:57:36.855121795-03:00",
+  "message" : "Tomcat started on port 8083 (http) with context path '/'",
+  "logger_name" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.boot.web.embedded.tomcat.TomcatWebServer",
+  "caller_method_name" : "start",
+  "caller_file_name" : "TomcatWebServer.java",
+  "caller_line_number" : 243
+}
+{
+  "@timestamp" : "2025-04-19T18:57:36.894259491-03:00",
+  "message" : "Started CashflowApplication in 4.426 seconds (process running for 5.167)",
+  "logger_name" : "br.com.tecnosys.cashflow.CashflowApplication",
+  "thread_name" : "restartedMain",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.boot.StartupInfoLogger",
+  "caller_method_name" : "logStarted",
+  "caller_file_name" : "StartupInfoLogger.java",
+  "caller_line_number" : 59
+}
+{
+  "@timestamp" : "2025-04-19T18:57:37.262020998-03:00",
+  "message" : "Initializing Spring DispatcherServlet 'dispatcherServlet'",
+  "logger_name" : "org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]",
+  "thread_name" : "RMI TCP Connection(3)-127.0.0.1",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.apache.juli.logging.DirectJDKLog",
+  "caller_method_name" : "log",
+  "caller_file_name" : "DirectJDKLog.java",
+  "caller_line_number" : 173
+}
+{
+  "@timestamp" : "2025-04-19T18:57:37.262770298-03:00",
+  "message" : "Initializing Servlet 'dispatcherServlet'",
+  "logger_name" : "org.springframework.web.servlet.DispatcherServlet",
+  "thread_name" : "RMI TCP Connection(3)-127.0.0.1",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.web.servlet.FrameworkServlet",
+  "caller_method_name" : "initServletBean",
+  "caller_file_name" : "FrameworkServlet.java",
+  "caller_line_number" : 532
+}
+{
+  "@timestamp" : "2025-04-19T18:57:37.265019273-03:00",
+  "message" : "Completed initialization in 2 ms",
+  "logger_name" : "org.springframework.web.servlet.DispatcherServlet",
+  "thread_name" : "RMI TCP Connection(3)-127.0.0.1",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.web.servlet.FrameworkServlet",
+  "caller_method_name" : "initServletBean",
+  "caller_file_name" : "FrameworkServlet.java",
+  "caller_line_number" : 554
+}
+{
+  "@timestamp" : "2025-04-19T18:58:09.188671575-03:00",
+  "message" : "Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)",
+  "logger_name" : "org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener",
+  "thread_name" : "File Watcher",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener",
+  "caller_method_name" : "onApplicationEvent",
+  "caller_file_name" : "LocalDevToolsAutoConfiguration.java",
+  "caller_line_number" : 211
+}
+{
+  "@timestamp" : "2025-04-19T18:58:09.191513214-03:00",
+  "message" : "Commencing graceful shutdown. Waiting for active requests to complete",
+  "logger_name" : "org.springframework.boot.web.embedded.tomcat.GracefulShutdown",
+  "thread_name" : "Thread-5",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.boot.web.embedded.tomcat.GracefulShutdown",
+  "caller_method_name" : "shutDownGracefully",
+  "caller_file_name" : "GracefulShutdown.java",
+  "caller_line_number" : 54
+}
+{
+  "@timestamp" : "2025-04-19T18:58:09.192356561-03:00",
+  "message" : "Pausing ProtocolHandler [\"http-nio-8083\"]",
+  "logger_name" : "org.apache.coyote.http11.Http11NioProtocol",
+  "thread_name" : "tomcat-shutdown",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.apache.juli.logging.DirectJDKLog",
+  "caller_method_name" : "log",
+  "caller_file_name" : "DirectJDKLog.java",
+  "caller_line_number" : 173
+}
+{
+  "@timestamp" : "2025-04-19T18:58:09.193472487-03:00",
+  "message" : "Graceful shutdown complete",
+  "logger_name" : "org.springframework.boot.web.embedded.tomcat.GracefulShutdown",
+  "thread_name" : "tomcat-shutdown",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.boot.web.embedded.tomcat.GracefulShutdown",
+  "caller_method_name" : "doShutdown",
+  "caller_file_name" : "GracefulShutdown.java",
+  "caller_line_number" : 76
+}
+{
+  "@timestamp" : "2025-04-19T18:58:09.194000123-03:00",
+  "message" : "Stopping ProtocolHandler [\"http-nio-8083\"]",
+  "logger_name" : "org.apache.coyote.http11.Http11NioProtocol",
+  "thread_name" : "Thread-5",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.apache.juli.logging.DirectJDKLog",
+  "caller_method_name" : "log",
+  "caller_file_name" : "DirectJDKLog.java",
+  "caller_line_number" : 173
+}
+{
+  "@timestamp" : "2025-04-19T18:58:09.199986129-03:00",
+  "message" : "Closing JPA EntityManagerFactory for persistence unit 'default'",
+  "logger_name" : "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+  "thread_name" : "Thread-5",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "org.springframework.orm.jpa.AbstractEntityManagerFactoryBean",
+  "caller_method_name" : "destroy",
+  "caller_file_name" : "AbstractEntityManagerFactoryBean.java",
+  "caller_line_number" : 660
+}
+{
+  "@timestamp" : "2025-04-19T18:58:09.202417941-03:00",
+  "message" : "pg-pool-cashflow - Shutdown initiated...",
+  "logger_name" : "com.zaxxer.hikari.HikariDataSource",
+  "thread_name" : "Thread-5",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "com.zaxxer.hikari.HikariDataSource",
+  "caller_method_name" : "close",
+  "caller_file_name" : "HikariDataSource.java",
+  "caller_line_number" : 349
+}
+{
+  "@timestamp" : "2025-04-19T18:58:09.204115614-03:00",
+  "message" : "pg-pool-cashflow - Shutdown completed.",
+  "logger_name" : "com.zaxxer.hikari.HikariDataSource",
+  "thread_name" : "Thread-5",
+  "level" : "INFO",
+  "HOSTNAME" : "gilberto",
+  "activeProfile" : "prod",
+  "appName" : "cashflow",
+  "app" : "cashflow",
+  "env" : "prod",
+  "host" : "gilberto",
+  "caller_class_name" : "com.zaxxer.hikari.HikariDataSource",
+  "caller_method_name" : "close",
+  "caller_file_name" : "HikariDataSource.java",
+  "caller_line_number" : 351
+}
+2025-04-19 18:58:09.318 [restartedMain] INFO  b.c.t.cashflow.CashflowApplication - Starting CashflowApplication using Java 21.0.6 with PID 176999 (/home/gilberto/projetos/cashflow/target/classes started by gilberto in /home/gilberto/projetos/cashflow)
+2025-04-19 18:58:09.319 [restartedMain] INFO  b.c.t.cashflow.CashflowApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-19 18:58:09.604 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 18:58:09.622 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 5 JPA repository interfaces.
+2025-04-19 18:58:09.674 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=17f6c07a-44de-3c4a-8dc9-3284b39b429f
+2025-04-19 18:58:09.767 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2025-04-19 18:58:09.768 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2025-04-19 18:58:09.768 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-19 18:58:09.768 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-19 18:58:09.777 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-19 18:58:09.778 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 457 ms
+2025-04-19 18:58:09.896 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - pg-pool-cashflow - Starting...
+2025-04-19 18:58:09.915 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - pg-pool-cashflow - Added connection org.postgresql.jdbc.PgConnection@7e6dcb5d
+2025-04-19 18:58:09.916 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - pg-pool-cashflow - Start completed.
+2025-04-19 18:58:09.918 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cashflow (PostgreSQL 17.4)
+2025-04-19 18:58:09.927 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.003s)
+2025-04-19 18:58:09.951 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2
+2025-04-19 18:58:09.952 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-04-19 18:58:09.974 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 18:58:09.976 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-19 18:58:09.981 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-19 18:58:09.984 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-19 18:58:09.986 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (pg-pool-cashflow)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-19 18:58:10.104 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-19 18:58:10.105 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 18:58:10.248 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-19 18:58:10.646 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 6 endpoints beneath base path '/actuator'
+2025-04-19 18:58:10.674 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2025-04-19 18:58:10.675 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2025-04-19 18:58:10.702 [restartedMain] INFO  b.c.t.cashflow.CashflowApplication - Started CashflowApplication in 1.452 seconds (process running for 38.975)
+2025-04-19 18:58:10.704 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-04-19 18:58:21.088 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-19 18:58:21.089 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-19 18:58:21.092 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 18:58:21.093 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - pg-pool-cashflow - Shutdown initiated...
+2025-04-19 18:58:21.094 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - pg-pool-cashflow - Shutdown completed.
+2025-04-19 18:58:23.183 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-04-19 18:58:23.216 [restartedMain] INFO  b.c.t.cashflow.CashflowApplication - Starting CashflowApplication using Java 21.0.6 with PID 177733 (/home/gilberto/projetos/cashflow/target/classes started by gilberto in /home/gilberto/projetos/cashflow)
+2025-04-19 18:58:23.217 [restartedMain] INFO  b.c.t.cashflow.CashflowApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-19 18:58:23.254 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-19 18:58:23.254 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-19 18:58:23.919 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-19 18:58:23.959 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 5 JPA repository interfaces.
+2025-04-19 18:58:24.075 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=17f6c07a-44de-3c4a-8dc9-3284b39b429f
+2025-04-19 18:58:24.526 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2025-04-19 18:58:24.535 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2025-04-19 18:58:24.536 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-19 18:58:24.536 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-19 18:58:24.560 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-19 18:58:24.560 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1305 ms
+2025-04-19 18:58:24.863 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - pg-pool-cashflow - Starting...
+2025-04-19 18:58:24.949 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - pg-pool-cashflow - Added connection org.postgresql.jdbc.PgConnection@35ea4d4d
+2025-04-19 18:58:24.950 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - pg-pool-cashflow - Start completed.
+2025-04-19 18:58:24.968 [restartedMain] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/cashflow (PostgreSQL 17.4)
+2025-04-19 18:58:24.999 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.017s)
+2025-04-19 18:58:25.026 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2
+2025-04-19 18:58:25.028 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-04-19 18:58:25.104 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-19 18:58:25.161 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-19 18:58:25.189 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-19 18:58:25.347 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-19 18:58:25.384 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-19 18:58:25.397 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (pg-pool-cashflow)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-19 18:58:25.986 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-19 18:58:25.988 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 18:58:26.304 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-19 18:58:26.978 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 6 endpoints beneath base path '/actuator'
+2025-04-19 18:58:27.040 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2025-04-19 18:58:27.048 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2025-04-19 18:58:27.092 [restartedMain] INFO  b.c.t.cashflow.CashflowApplication - Started CashflowApplication in 4.368 seconds (process running for 5.197)
+2025-04-19 18:58:27.463 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-19 18:58:27.463 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-19 18:58:27.465 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-04-19 18:58:28.205 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-19 18:58:28.206 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-04-19 18:58:28.211 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-19 18:58:28.213 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - pg-pool-cashflow - Shutdown initiated...
+2025-04-19 18:58:28.215 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - pg-pool-cashflow - Shutdown completed.
