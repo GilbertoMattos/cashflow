@@ -231,7 +231,7 @@ class EmpresaServiceTest {
         @DisplayName("Deve atualizar empresa quando existe")
         void update_QuandoExiste_DeveAtualizarEmpresa() {
             // Arrange
-            when(empresaRepository.existsById(1L)).thenReturn(true);
+            when(empresaRepository.findById(1L)).thenReturn(Optional.of(empresa));
             when(modelMapper.map(any(EmpresaDTO.class), eq(Empresa.class))).thenReturn(empresa);
             when(modelMapper.map(any(Empresa.class), eq(EmpresaDTO.class))).thenReturn(empresaDTO);
             when(empresaRepository.save(any(Empresa.class))).thenReturn(empresa);
@@ -248,7 +248,7 @@ class EmpresaServiceTest {
                         assertThat(dto.getCnpj()).isEqualTo(empresaDTO.getCnpj());
                     });
 
-            verify(empresaRepository).existsById(1L);
+            verify(empresaRepository).findById(1L);
             verify(empresaRepository).save(any(Empresa.class));
         }
 
@@ -256,14 +256,14 @@ class EmpresaServiceTest {
         @DisplayName("Deve lançar exceção ao atualizar empresa inexistente")
         void update_QuandoNaoExiste_DeveLancarExcecao() {
             // Arrange
-            when(empresaRepository.existsById(1L)).thenReturn(false);
+            when(empresaRepository.findById(1L)).thenReturn(Optional.empty());
 
             // Act & Assert
             assertThatThrownBy(() -> empresaService.update(1L, empresaDTO))
                     .isInstanceOf(RuntimeException.class)
                     .hasMessage("Empresa não encontrada");
 
-            verify(empresaRepository).existsById(1L);
+            verify(empresaRepository).findById(1L);
             verify(empresaRepository, never()).save(any());
         }
     }

@@ -5,6 +5,7 @@ import br.com.tecnosys.cashflow.dto.ApiResponse;
 import br.com.tecnosys.cashflow.dto.EmpresaDTO;
 import br.com.tecnosys.cashflow.repository.EmpresaRepository;
 import br.com.tecnosys.cashflow.service.EmpresaService;
+import br.com.tecnosys.cashflow.utils.Utils;
 import lombok.extern.log4j.Log4j2;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
@@ -55,13 +56,17 @@ public class EmpresaServiceImpl implements EmpresaService {
     }
 
     @Override
-    public EmpresaDTO update(Long id, EmpresaDTO empresa) {
-        log.debug("Update da empresa {} dados : {}", id, empresa);
-        if (!empresaRepository.existsById(id)) {
-            throw new RuntimeException("Empresa não encontrada");
-        }
-        empresa.setId(id);
-        Empresa updatedEmpresa = empresaRepository.save(convertToEntity(empresa));
+    public EmpresaDTO update(Long id, EmpresaDTO empresaDTO) {
+        log.debug("Update da empresa {} dados : {}", id, empresaDTO);
+        Empresa empresa = empresaRepository.findById(id)
+                .orElseThrow(() -> {
+                    log.error("Empresa {} nao encontrada para atualizar", id);
+                    return new RuntimeException("Empresa não encontrada");
+                });
+
+        Utils.copyNonNullProperties(convertToEntity(empresaDTO), empresa);
+
+        Empresa updatedEmpresa = empresaRepository.save(empresa);
         log.info("Empresa {} atualizada com sucesso", id);
         return convertToDTO(updatedEmpresa);
     }
