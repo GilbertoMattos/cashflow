@@ -21,7 +21,7 @@ import br.com.tecnosys.cashflow.service.EmpresaService;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/api/empresas")
+@RequestMapping("/api/empresa")
 public class EmpresaController {
 
     private final EmpresaService empresaService;
