@@ -3,18 +3,18 @@ package br.com.tecnosys.cashflow.service.impl;
 import br.com.tecnosys.cashflow.dto.ViaCepDTO;
 import br.com.tecnosys.cashflow.exception.BusinessException;
 import br.com.tecnosys.cashflow.http.ViaCepFeign;
-import br.com.tecnosys.cashflow.service.ViaCepService;
+import br.com.tecnosys.cashflow.service.EnderecoService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 @Service
 @Log4j2
-public class ViaCepServiceImpl implements ViaCepService {
+public class EnderecoServiceImpl implements EnderecoService {
 
     private final ViaCepFeign viaCepFeign;
 
-    public ViaCepServiceImpl(ViaCepFeign viaCepFeign) {
+    public EnderecoServiceImpl(ViaCepFeign viaCepFeign) {
         this.viaCepFeign = viaCepFeign;
     }
 

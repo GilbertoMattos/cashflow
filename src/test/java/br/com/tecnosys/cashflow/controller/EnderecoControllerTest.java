@@ -3,7 +3,7 @@ package br.com.tecnosys.cashflow.controller;
 import br.com.tecnosys.cashflow.dto.ViaCepDTO;
 import br.com.tecnosys.cashflow.exception.BusinessException;
 import br.com.tecnosys.cashflow.exception.GlobalExceptionHandler;
-import br.com.tecnosys.cashflow.service.ViaCepService;
+import br.com.tecnosys.cashflow.service.EnderecoService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import feign.FeignException;
 import feign.Request;
@@ -40,7 +40,7 @@ class EnderecoControllerTest {
     private static final String CEP_FORMATO_INVALIDO = "123";
 
     @Mock
-    private ViaCepService viaCepService;
+    private EnderecoService viaCepService;
 
     @InjectMocks
     private EnderecoController enderecoController;
