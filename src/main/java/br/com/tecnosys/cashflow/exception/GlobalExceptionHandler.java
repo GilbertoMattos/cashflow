@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
+import org.springframework.web.servlet.resource.NoResourceFoundException;
 
 @RestControllerAdvice
 @Slf4j
@@ -34,6 +35,13 @@ public class GlobalExceptionHandler {
     public ApiResponse<Void> handleServiceUnavailable(FeignException.ServiceUnavailable ex) {
         log.error("Serviço externo indisponível: {}", ex.getMessage());
         return new ApiResponse<>("Serviço indisponível");
+    }
+
+    @ExceptionHandler(NoResourceFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ApiResponse<Void> handleNoResourceFoundException(NoResourceFoundException ex) {
+        log.warn("Recurso não encontrado: {}", ex.getMessage());
+        return new ApiResponse<>("Recurso não encontrado");
     }
 
     @ExceptionHandler(Exception.class)
