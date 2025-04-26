@@ -26,6 +26,11 @@ spring:
 logging:
   level:
     root: info
+    br.com.tecnosys.cashflow.controller: info
+    br.com.tecnosys.cashflow.service: debug
+    br.com.tecnosys.cashflow.repository: warn
+    org.springframework: warn
+    org.hibernate: warn
   logback:
     rollingpolicy:
       max-file-size: 10MB

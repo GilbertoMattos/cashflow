@@ -2,6 +2,7 @@ package br.com.tecnosys.cashflow.controller;
 
 import br.com.tecnosys.cashflow.dto.ApiResponse;
 import br.com.tecnosys.cashflow.dto.OperadorDTO;
+import br.com.tecnosys.cashflow.exception.BusinessException;
 import br.com.tecnosys.cashflow.service.OperadorService;
 import jakarta.validation.Valid;
 import org.springframework.data.domain.Pageable;
@@ -36,7 +37,7 @@ public class OperadorController {
             ApiResponse<OperadorDTO> response = new ApiResponse<>(operadorDTO.get());
             return ResponseEntity.ok(response);
         } else {
-            throw new RuntimeException("Operador não encontrado");
+            throw new BusinessException("Operador não encontrado");
         }
     }
 

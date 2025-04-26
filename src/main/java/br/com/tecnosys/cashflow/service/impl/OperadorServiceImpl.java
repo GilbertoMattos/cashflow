@@ -3,10 +3,11 @@ package br.com.tecnosys.cashflow.service.impl;
 import br.com.tecnosys.cashflow.domain.Operador;
 import br.com.tecnosys.cashflow.dto.ApiResponse;
 import br.com.tecnosys.cashflow.dto.OperadorDTO;
+import br.com.tecnosys.cashflow.exception.BusinessException;
 import br.com.tecnosys.cashflow.repository.OperadorRepository;
 import br.com.tecnosys.cashflow.service.OperadorService;
 import br.com.tecnosys.cashflow.utils.Utils;
-import lombok.extern.log4j.Log4j2;
+import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -16,7 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-@Log4j2
+@Slf4j
 public class OperadorServiceImpl implements OperadorService {
 
     private final OperadorRepository operadorRepository;
@@ -76,7 +77,7 @@ public class OperadorServiceImpl implements OperadorService {
         log.debug("Delete do operador {}", id);
         if (!operadorRepository.existsById(id)) {
             log.error("Operador {} nao encontrado para remover", id);
-            throw new RuntimeException("Operador não encontrado");
+            throw new BusinessException("Operador não encontrado");
         }
         operadorRepository.deleteById(id);
         log.info("Operador {} removido com sucesso", id);

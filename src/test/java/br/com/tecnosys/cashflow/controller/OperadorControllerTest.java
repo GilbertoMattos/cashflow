@@ -78,7 +78,7 @@ class OperadorControllerTest {
     void createOperador_Success() throws Exception {
         when(operadorService.save(any(OperadorDTO.class))).thenReturn(operadorDTO);
 
-        mockMvc.perform(post("/api/operadores")
+        mockMvc.perform(post("/api/operador")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(operadorDTO)))
                 .andExpect(status().isCreated())
@@ -93,7 +93,7 @@ class OperadorControllerTest {
         OperadorDTO invalidOperador = new OperadorDTO();
         invalidOperador.setId(1L);
 
-        mockMvc.perform(post("/api/operadores")
+        mockMvc.perform(post("/api/operador")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(invalidOperador)))
                 .andExpect(status().isPreconditionFailed())
@@ -105,7 +105,7 @@ class OperadorControllerTest {
     void getOperadorById_Success() throws Exception {
         when(operadorService.findById(1L)).thenReturn(Optional.of(operadorDTO));
 
-        mockMvc.perform(get("/api/operadores/1"))
+        mockMvc.perform(get("/api/operador/1"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.message").value("Operação realizada com sucesso"))
                 .andExpect(jsonPath("$.data.id").value(1))
@@ -117,7 +117,7 @@ class OperadorControllerTest {
     void getOperadorById_NotFound() throws Exception {
         when(operadorService.findById(1L)).thenReturn(Optional.empty());
 
-        mockMvc.perform(get("/api/operadores/1"))
+        mockMvc.perform(get("/api/operador/1"))
                 .andExpect(status().isBadRequest())
                 .andExpect(jsonPath("$.message").exists());
     }
@@ -131,7 +131,7 @@ class OperadorControllerTest {
 
         when(operadorService.findAll(any(Pageable.class))).thenReturn(response);
 
-        mockMvc.perform(get("/api/operadores")
+        mockMvc.perform(get("/api/operador")
                         .param("page", "0")
                         .param("size", "10")
                         .accept(MediaType.APPLICATION_JSON))
@@ -150,7 +150,7 @@ class OperadorControllerTest {
     void updateOperador_Success() throws Exception {
         when(operadorService.update(any(Long.class), any(OperadorDTO.class))).thenReturn(operadorDTO);
 
-        mockMvc.perform(put("/api/operadores/1")
+        mockMvc.perform(put("/api/operador/1")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(operadorDTO)))
                 .andExpect(status().isOk())
@@ -165,7 +165,7 @@ class OperadorControllerTest {
         when(operadorService.update(any(Long.class), any(OperadorDTO.class)))
                 .thenThrow(new RuntimeException("Operador não encontrado"));
 
-        mockMvc.perform(put("/api/operadores/1")
+        mockMvc.perform(put("/api/operador/1")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(operadorDTO)))
                 .andExpect(status().isBadRequest())
@@ -177,7 +177,7 @@ class OperadorControllerTest {
     void deleteOperador_Success() throws Exception {
         doNothing().when(operadorService).deleteById(1L);
 
-        mockMvc.perform(delete("/api/operadores/1"))
+        mockMvc.perform(delete("/api/operador/1"))
                 .andExpect(status().isOk());
     }
 
@@ -187,7 +187,7 @@ class OperadorControllerTest {
         doThrow(new RuntimeException("Operador não encontrado"))
                 .when(operadorService).deleteById(1L);
 
-        mockMvc.perform(delete("/api/operadores/1"))
+        mockMvc.perform(delete("/api/operador/1"))
                 .andExpect(status().isBadRequest())
                 .andExpect(jsonPath("$.message").exists());
     }

@@ -84,7 +84,7 @@ public class EmpresaControllerTest {
     void createEmpresa_Success() throws Exception {
         when(empresaService.save(any(EmpresaDTO.class))).thenReturn(empresaDTO);
 
-        mockMvc.perform(post("/api/empresas")
+        mockMvc.perform(post("/api/empresa")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(empresaDTO)))
                 .andExpect(status().isCreated())
@@ -101,7 +101,7 @@ public class EmpresaControllerTest {
         invalidEmpresa.setId(1L);
         invalidEmpresa.setCnpj("12345678901234");
 
-        mockMvc.perform(post("/api/empresas")
+        mockMvc.perform(post("/api/empresa")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(invalidEmpresa)))
                 .andExpect(status().isPreconditionFailed())
@@ -115,7 +115,7 @@ public class EmpresaControllerTest {
         invalidEmpresa.setId(1L);
         invalidEmpresa.setNome("Empresa Teste");
 
-        mockMvc.perform(post("/api/empresas")
+        mockMvc.perform(post("/api/empresa")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(invalidEmpresa)))
                 .andExpect(status().isPreconditionFailed())
@@ -127,7 +127,7 @@ public class EmpresaControllerTest {
     void getEmpresaById_Success() throws Exception {
         when(empresaService.findById(1L)).thenReturn(Optional.of(empresaDTO));
 
-        mockMvc.perform(get("/api/empresas/1"))
+        mockMvc.perform(get("/api/empresa/1"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.message").value("Operação realizada com sucesso"))
                 .andExpect(jsonPath("$.data.id").value(1))
@@ -140,7 +140,7 @@ public class EmpresaControllerTest {
     void getEmpresaById_NotFound() throws Exception {
         when(empresaService.findById(1L)).thenReturn(Optional.empty());
 
-        mockMvc.perform(get("/api/empresas/1"))
+        mockMvc.perform(get("/api/empresa/1"))
                 .andExpect(status().isBadRequest())
                 .andExpect(jsonPath("$.message").exists());
     }
@@ -154,7 +154,7 @@ public class EmpresaControllerTest {
 
         when(empresaService.findAll(any(Pageable.class))).thenReturn(response);
 
-        mockMvc.perform(get("/api/empresas")
+        mockMvc.perform(get("/api/empresa")
                 .param("page", "0")
                 .param("size", "10")
                 .accept(MediaType.APPLICATION_JSON))
@@ -174,7 +174,7 @@ public class EmpresaControllerTest {
     void updateEmpresa_Success() throws Exception {
         when(empresaService.update(any(Long.class), any(EmpresaDTO.class))).thenReturn(empresaDTO);
 
-        mockMvc.perform(put("/api/empresas/1")
+        mockMvc.perform(put("/api/empresa/1")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(empresaDTO)))
                 .andExpect(status().isOk())
@@ -190,7 +190,7 @@ public class EmpresaControllerTest {
         when(empresaService.update(any(Long.class), any(EmpresaDTO.class)))
                 .thenThrow(new RuntimeException("Empresa não encontrada"));
 
-        mockMvc.perform(put("/api/empresas/1")
+        mockMvc.perform(put("/api/empresa/1")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(empresaDTO)))
                 .andExpect(status().isBadRequest())
@@ -202,7 +202,7 @@ public class EmpresaControllerTest {
     void deleteEmpresa_Success() throws Exception {
         doNothing().when(empresaService).deleteById(1L);
 
-        mockMvc.perform(delete("/api/empresas/1"))
+        mockMvc.perform(delete("/api/empresa/1"))
                 .andExpect(status().isOk());
     }
 
@@ -212,7 +212,7 @@ public class EmpresaControllerTest {
         doThrow(new RuntimeException("Empresa não encontrada"))
                 .when(empresaService).deleteById(1L);
 
-        mockMvc.perform(delete("/api/empresas/1"))
+        mockMvc.perform(delete("/api/empresa/1"))
                 .andExpect(status().isBadRequest())
                 .andExpect(jsonPath("$.message").exists());
     }
