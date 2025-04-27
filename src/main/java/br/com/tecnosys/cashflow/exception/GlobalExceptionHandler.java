@@ -45,9 +45,9 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(Exception.class)
-    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public final ApiResponse<Void> handleAllExceptions(Exception ex) {
         log.error("Erro não tratado: ", ex);
-        return new ApiResponse<>("Erro interno do servidor: " + ex.getLocalizedMessage());
+        return new ApiResponse<>("Erro interno do servidor");
     }
 }

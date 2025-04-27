@@ -193,7 +193,7 @@ public class EmpresaControllerTest {
         mockMvc.perform(put("/api/empresa/1")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(empresaDTO)))
-                .andExpect(status().isBadRequest())
+                .andExpect(status().isInternalServerError())
                 .andExpect(jsonPath("$.message").exists());
     }
 
@@ -213,7 +213,7 @@ public class EmpresaControllerTest {
                 .when(empresaService).deleteById(1L);
 
         mockMvc.perform(delete("/api/empresa/1"))
-                .andExpect(status().isBadRequest())
+                .andExpect(status().isInternalServerError())
                 .andExpect(jsonPath("$.message").exists());
     }
 }

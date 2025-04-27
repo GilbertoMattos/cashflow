@@ -9,7 +9,7 @@ clients:
   - url: http://loki:3100/loki/api/v1/push
 
 scrape_configs:
-  - job_name: spring-boot
+  - job_name: cashflow
     pipeline_stages:
       - multiline:
           firstline: '^\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}'
@@ -18,5 +18,5 @@ scrape_configs:
       - targets:
           - localhost
         labels:
-          job: spring-boot
+          job: cashflow
           __path__: /var/log/*.log

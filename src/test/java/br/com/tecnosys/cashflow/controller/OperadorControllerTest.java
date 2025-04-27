@@ -168,7 +168,7 @@ class OperadorControllerTest {
         mockMvc.perform(put("/api/operador/1")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(operadorDTO)))
-                .andExpect(status().isBadRequest())
+                .andExpect(status().isInternalServerError())
                 .andExpect(jsonPath("$.message").exists());
     }
 
@@ -188,7 +188,7 @@ class OperadorControllerTest {
                 .when(operadorService).deleteById(1L);
 
         mockMvc.perform(delete("/api/operador/1"))
-                .andExpect(status().isBadRequest())
+                .andExpect(status().isInternalServerError())
                 .andExpect(jsonPath("$.message").exists());
     }
 }
