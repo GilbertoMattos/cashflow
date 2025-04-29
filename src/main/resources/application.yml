@@ -61,3 +61,11 @@ management:
       enabled: true
     os:
       enabled: true
+springdoc:
+  packages-to-scan: br.com.tecnosys.cashflow.controller
+  api-docs:
+    enabled: true
+  swagger-ui:
+    doc-expansion: none
+    path: /
+    enabled: true
