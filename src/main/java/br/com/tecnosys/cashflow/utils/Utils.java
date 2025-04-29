@@ -10,7 +10,7 @@ import java.util.Set;
 
 public class Utils {
 
-    public static void copyNonNullProperties(Object source, Object target){
+    public static void copyNonNullProperties(Object source, Object target) {
         BeanUtils.copyProperties(source, target, getNullPropertyNames(source));
     }
 
@@ -23,7 +23,7 @@ public class Utils {
 
         for (PropertyDescriptor pd : pds) {
             Object srcvalue = src.getPropertyValue(pd.getName());
-            if (srcvalue == null){
+            if (srcvalue == null) {
                 emptyNames.add(pd.getName());
             }
         }

@@ -9,8 +9,12 @@ import java.util.Optional;
 
 public interface OperadorService {
     OperadorDTO save(OperadorDTO operador);
+
     Optional<OperadorDTO> findById(Long id);
+
     ApiResponse<List<OperadorDTO>> findAll(Pageable pageable);
+
     OperadorDTO update(Long id, OperadorDTO operador);
+
     void deleteById(Long id);
 }
