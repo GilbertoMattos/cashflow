@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: @project.artifactId@
+  boot:
+    admin:
+      client:
+        url: http://localhost:8085
   datasource:
     url: jdbc:postgresql://localhost:5432/cashflow
     username: postgres
