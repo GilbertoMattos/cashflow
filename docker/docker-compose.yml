@@ -78,6 +78,7 @@ services:
       - SERVER_PORT=8080
       - SPRING_PROFILES_ACTIVE=prod
       - SPRING_APPLICATION_NAME=cashflow
+      - SPRING_BOOT_ADMIN_CLIENT_URL=http://spring-boot-admin:8085
     ports:
       - "8080:8080"
     volumes:
@@ -95,7 +96,13 @@ services:
 
 networks:
   monitoring:
+    # Using bridge driver for the monitoring network
+    # This network is also used by the spring-boot-admin container
+    # which is defined in a separate docker-compose file
     driver: bridge
+    # Using the 'external: true' option to connect to an existing network
+    # This allows containers from different docker-compose files to communicate
+    external: true
 
 volumes:
   grafana-data:
